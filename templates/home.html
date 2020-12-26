@@ -5,5 +5,15 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Tample</h1>
+<h1 class="head-name">Temple</h1>
+
+<div class="form">
+<form action="" method="POST">
+  {%csrf_token%}
+  <input type="text" name="search" autocomplete="off" id="search-bar">
+  <br>
+  <button>Search</button>
+</form>
+</div>
+
 {% endblock %}

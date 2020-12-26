@@ -11,6 +11,11 @@ class Temple(models.Model):
     address = models.TextField()
     latitude = models.CharField(max_length=15)
     logitute = models.CharField(max_length=15)
-    
+
     def __str__(self):
         return self.name+" "+self.pincode
+
+class images(models.Model):
+    images = models.ForeignKey(Temple,on_delete=models.CASCADE)
+
+    
